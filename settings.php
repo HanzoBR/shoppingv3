@@ -1,12 +1,12 @@
 <?php
 /*
-    @Configurações do serial
+    @Configuraï¿½ï¿½es do serial
 */
-define("countryPreference", 0x02); // Para Brasil 0x01, Estados Unidos da América 0x02
-define("autenticationCache", true); // Guarda a chave de segurança em cache para não fazer requisições a cada pagina acessada. 
+define("countryPreference", 0x02); // Para Brasil 0x01, Estados Unidos da Amï¿½rica 0x02
+define("autenticationCache", true); // Guarda a chave de seguranï¿½a em cache para nï¿½o fazer requisiï¿½ï¿½es a cada pagina acessada. 
 
 /*
-	@Conexão com o sql [MuServer];
+	@Conexï¿½o com o sql [MuServer];
 */
 define("HOST_SQL", "127.0.0.1");
 define("DATABASE_SQL", "MuOnline");
@@ -19,27 +19,33 @@ define("PWD_SQL", "d3l3t3.S");
 define("DB_SHOP_SQL", "RvTShopping");
 
 /*
-	@Codificação de items;
-	@Para versões velhas use: OLD
-	@Para versões novas use: NEW
+usar SQL=0 usar MySQL=1
+padrao=0
+*/
+define("DBMODE", "0");
+
+/*
+	@Codificaï¿½ï¿½o de items;
+	@Para versï¿½es velhas use: OLD
+	@Para versï¿½es novas use: NEW
 */
 define("SYSTEM_ITEMS","OLD");
 
-define("ENCGAMES_S6", false); //Coloque true para versão Season 6 Epi 3 da ENC Games
+define("ENCGAMES_S6", false); //Coloque true para versï¿½o Season 6 Epi 3 da ENC Games
 
 
 /*
-    Exemplo de como configurar a opção: SYSTEM_DBVERSION
-    //1 = (Versões antigas sem personal store), 2 = (Versões antigas com personal store), 3 = (Versões novas com personal store e harmony)  
+    Exemplo de como configurar a opï¿½ï¿½o: SYSTEM_DBVERSION
+    //1 = (Versï¿½es antigas sem personal store), 2 = (Versï¿½es antigas com personal store), 3 = (Versï¿½es novas com personal store e harmony)  
     
-    Para versões 97d, use a opção numero 1;
-    Para versões 1.0 use a opção numero 2; 
-    Para versões 1.2n ou acima use a opção numero 3; 
+    Para versï¿½es 97d, use a opï¿½ï¿½o numero 1;
+    Para versï¿½es 1.0 use a opï¿½ï¿½o numero 2; 
+    Para versï¿½es 1.2n ou acima use a opï¿½ï¿½o numero 3; 
 */
-define("SYSTEM_DBVERSION", 1); //1 = (Versões antigas sem personal store), 2 = (Versões antigas com personal store), 3 = (Versões novas com personal store e harmony)  
+define("SYSTEM_DBVERSION", 1); //1 = (Versï¿½es antigas sem personal store), 2 = (Versï¿½es antigas com personal store), 3 = (Versï¿½es novas com personal store e harmony)  
 
 /*
-	@Encriptação senha;
+	@Encriptaï¿½ï¿½o senha;
 */
 define("HASHMD5", FALSE);
 
@@ -57,8 +63,8 @@ define("GOLDMEMBIDENT", "memb___id"); #Coluna identificadora da moeda
 */
 define("LANGUAGE", "pt-br");
 
-// Importante: O sistema de arquivos do unix é sensível a maiúsculas e minúsculas (case sensitive).
-// Nesse caso, por exemplo, o arquivo de linguagem deve ter exatamente o nome "pt-br.php" e não "PT-BR.php"
+// Importante: O sistema de arquivos do unix ï¿½ sensï¿½vel a maiï¿½sculas e minï¿½sculas (case sensitive).
+// Nesse caso, por exemplo, o arquivo de linguagem deve ter exatamente o nome "pt-br.php" e nï¿½o "PT-BR.php"
 
 /*
     @Sistema de template;
@@ -67,7 +73,7 @@ define("LANGUAGE", "pt-br");
 define("TEMPLATE", "Default");
 
 /*
-    @Nome da sessão;
+    @Nome da sessï¿½o;
 */
 define("SESSION_NAME_SHOP", "iwuhf98f4fv");
                                
@@ -81,19 +87,19 @@ define("SESSION_NAME_SHOP", "iwuhf98f4fv");
        1 = Sistema da SCF / SCFMT (MuMaker)
 */
 define("SOCKET_USE_LIB", 0);
-define("LOCK_REPEAT_SOCKET", true); //Não permitir que sejá vendido item socket com opções repetidas.
-define("LOCK_REPEAT_CATEGORIE_SOCKET", false); //Não permitir que sejá vendido item socket com categorias repetidas.
-define("LOCK_REPEAT_SLOT_SOCKET", true); //Não permitir que sejá vendido item socket com slots repetidos.
-define("LOCK_REPEAT_SOCKET_TYPE", true); //Não permitir que sejá vendido item socket com tipos de sockets repetidos.
-define("LOCK_ANCIENT_AND_EXCELLENT", true); //Não permitir que sejá vendido item com opções excelentes e ancient juntos.
-define("LOCK_SOCKET_AND_HARMONY", false); //Não permitir que sejá vendido item com opções sockets e harmony juntos.
-define("LOCK_MAX_LEVEL", 15); //Configure aqui o level máximo que um player pode selecionar na hora de comprar um determinado item.
+define("LOCK_REPEAT_SOCKET", true); //Nï¿½o permitir que sejï¿½ vendido item socket com opï¿½ï¿½es repetidas.
+define("LOCK_REPEAT_CATEGORIE_SOCKET", false); //Nï¿½o permitir que sejï¿½ vendido item socket com categorias repetidas.
+define("LOCK_REPEAT_SLOT_SOCKET", true); //Nï¿½o permitir que sejï¿½ vendido item socket com slots repetidos.
+define("LOCK_REPEAT_SOCKET_TYPE", true); //Nï¿½o permitir que sejï¿½ vendido item socket com tipos de sockets repetidos.
+define("LOCK_ANCIENT_AND_EXCELLENT", true); //Nï¿½o permitir que sejï¿½ vendido item com opï¿½ï¿½es excelentes e ancient juntos.
+define("LOCK_SOCKET_AND_HARMONY", false); //Nï¿½o permitir que sejï¿½ vendido item com opï¿½ï¿½es sockets e harmony juntos.
+define("LOCK_MAX_LEVEL", 15); //Configure aqui o level mï¿½ximo que um player pode selecionar na hora de comprar um determinado item.
 
 /*
-    @ Sistema de recuperação de itens.
+    @ Sistema de recuperaï¿½ï¿½o de itens.
 */
-define("RECOVERY_LIMIT_ITEM", 0); // Use essa opção para limitar que todos os itens vendidos possam ser recuperados ate X vezes pelo player. Deixe 0 para ilimitado.
-define("RECOVERY_LIMIT_MIN_TIME", 3); //Tempo mínimo a ser aguardado com o player offline para recuperar um item no shopping; Tempo recomendado 15 minutos. (Evitar dupers em versão com personal store)
+define("RECOVERY_LIMIT_ITEM", 0); // Use essa opï¿½ï¿½o para limitar que todos os itens vendidos possam ser recuperados ate X vezes pelo player. Deixe 0 para ilimitado.
+define("RECOVERY_LIMIT_MIN_TIME", 3); //Tempo mï¿½nimo a ser aguardado com o player offline para recuperar um item no shopping; Tempo recomendado 15 minutos. (Evitar dupers em versï¿½o com personal store)
 
 define("WZ_GETITEMSERIAL", "WZ_GetItemSerial");
 define("HIDDEN_TOTAL_BUYS_CATALOG_ITEM", true);
